@@ -33,7 +33,7 @@ if ($Student_Status == 'active'){
         $email->Body      = 'Congratulations on your <b>5TH!</b> alumni talk participation';    //HTML
         $email->AltBody    = 'Congratulations on your 5TH! alumni talk participation';
         
-        $file_to_attach = "D:/XAMPP/htdocs/alumniTalk_CODE/certificate/download_certificate/$fileName";
+        $file_to_attach = __DIR__."/../certificate/upload_certificate/$fileName";
     
         $email->AddAttachment( $file_to_attach , "$fileName" );
     
